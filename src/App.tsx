@@ -1,14 +1,18 @@
 import React from 'react';
-import logo from './logo.svg';
-import { Counter } from './features/counter/Counter';
 import './App.css';
 import SongList from './features/SongList';
+import SongDetail from './features/SongDetail';
 
 function App() {
   return (
-    <div className="App">
+    <>
+      <div className='App'>
         <SongList />
-    </div>
+      </div>
+      <div className='column eight wide'>
+        <SongDetail />
+      </div>
+    </>
   );
 }
 
